@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Keuangan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Progress Keuangan</h1>
+        
+        <!-- Tampilkan Nama, Harga, dan Gambar Target -->
+        <div id="target-info">
+            <h2 id="target-name">Nama Barang</h2>
+            <img id="target-image" src="" alt="Gambar Barang" style="max-width: 100%; height: auto;">
+            <p>Harga Target: <span id="target-amount">Rp 0</span></p>
+        </div>        
+
+        <p>Progress:  <span id="current-amount">Rp 0</span></p>
+
+        <div class="progress-bar">
+            <div class="progress-bar-inner" id="progress-bar-inner"></div>
+        </div>
+
+        <form id="finance-form">
+            <input type="number" id="input-amount" placeholder="Masukkan nominal" required>
+            <button type="submit">Tambah</button>
+            <br>
+            <button type="button" id="reset-button">Reset</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
